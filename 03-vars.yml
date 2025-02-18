@@ -32,4 +32,15 @@
   roles:
     - demo
 
+# from command line also we can send variable to playbook by using -e option
+
+# If the same variable name comes in different locations then precedence will come.
+# 1. CLI variable
+# 2. Task variable
+# 3. Role variable
+# 4. Play variable
+
+
+
+
 
