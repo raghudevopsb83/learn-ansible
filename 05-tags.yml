@@ -5,7 +5,9 @@
     - name: Print Fruit
       ansible.builtin.debug:
         msg: "Apple"
-      tags: fruit
+      tags:
+        - fruit
+        - fruits
 
     - name: Print Vegetable
       ansible.builtin.debug:
