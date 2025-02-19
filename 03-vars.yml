@@ -41,6 +41,43 @@
 # 4. Play variable
 
 
+# Variables are now three types
+
+# 1. Normal
+# vars:
+#   URL: example.com
+
+# 2. List
+# vars:
+#   URLS:
+#     - app1.example.com
+#     - app2.example.com
+
+
+# 3. Map
+# vars
+#   URLS:
+#     app1: app1.example.com
+#     app2: app2.example.com
+
+
+# Variable also have data types
+# 1. String
+# 2. Number
+# 3. Boolean ( True/False , Yes/No, )
+
+## Up to now we have seen the user defined variables, where as ansible determines the system config and make those variables available for you to use.
+# Those are called as facts
+
+- name: Print a fact
+  hosts: localhost
+  connection: local
+  tasks:
+    - name: Print a fact
+      ansible.builtin.debug:
+        msg: "{{ ansible_distribution }}"
+
+
 
 
 
