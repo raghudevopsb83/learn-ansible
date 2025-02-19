@@ -52,14 +52,14 @@
 #   URLS:
 #     - app1.example.com
 #     - app2.example.com
-
+# {{ URLS[0] }}
 
 # 3. Map
 # vars
 #   URLS:
 #     app1: app1.example.com
 #     app2: app2.example.com
-
+#{{ URLS.app1 }}
 
 # Variable also have data types
 # 1. String
