@@ -1,0 +1,12 @@
+- name: Title
+  hosts: localhost
+  connection: local
+  vars:
+    name: john
+  tasks:
+    - name: Print
+      ansible.builtin.debug:
+        msg: "{{ name | title }}"
+
+
+
